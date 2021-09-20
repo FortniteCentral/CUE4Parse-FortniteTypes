@@ -2,6 +2,12 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CUE4Parse-FortniteTypes", "CUE4Parse-FortniteTypes.csproj", "{9119F4A6-3DE7-4EE3-9239-C09ECC1BE902}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CUE4Parse", "..\..\..\FModel\FModel\CUE4Parse\CUE4Parse\CUE4Parse.csproj", "{82361D57-8046-4D0E-87E1-2CC183515FD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CUE4Parse-Conversion", "..\..\..\FModel\FModel\CUE4Parse\CUE4Parse-Conversion\CUE4Parse-Conversion.csproj", "{A78A05BB-ABB8-40A3-A774-4A90B1696AF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CUE4Parse-Fortnite", "..\..\..\FModel\FModel\CUE4Parse\CUE4Parse-Fortnite\CUE4Parse-Fortnite.csproj", "{AF100025-AEAF-4F44-A073-C73BC7583DC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +18,17 @@ Global
 		{9119F4A6-3DE7-4EE3-9239-C09ECC1BE902}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9119F4A6-3DE7-4EE3-9239-C09ECC1BE902}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9119F4A6-3DE7-4EE3-9239-C09ECC1BE902}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82361D57-8046-4D0E-87E1-2CC183515FD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82361D57-8046-4D0E-87E1-2CC183515FD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82361D57-8046-4D0E-87E1-2CC183515FD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82361D57-8046-4D0E-87E1-2CC183515FD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A78A05BB-ABB8-40A3-A774-4A90B1696AF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A78A05BB-ABB8-40A3-A774-4A90B1696AF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A78A05BB-ABB8-40A3-A774-4A90B1696AF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A78A05BB-ABB8-40A3-A774-4A90B1696AF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF100025-AEAF-4F44-A073-C73BC7583DC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF100025-AEAF-4F44-A073-C73BC7583DC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF100025-AEAF-4F44-A073-C73BC7583DC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF100025-AEAF-4F44-A073-C73BC7583DC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

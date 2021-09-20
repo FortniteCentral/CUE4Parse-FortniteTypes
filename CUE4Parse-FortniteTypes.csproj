@@ -2,8 +2,14 @@
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
-        <RootNamespace>CUE4Parse_FortniteTypes</RootNamespace>
+        <RootNamespace>CUE4Parse</RootNamespace>
         <Nullable>enable</Nullable>
     </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\FModel\FModel\CUE4Parse\CUE4Parse-Conversion\CUE4Parse-Conversion.csproj" />
+      <ProjectReference Include="..\..\..\FModel\FModel\CUE4Parse\CUE4Parse-Fortnite\CUE4Parse-Fortnite.csproj" />
+      <ProjectReference Include="..\..\..\FModel\FModel\CUE4Parse\CUE4Parse\CUE4Parse.csproj" />
+    </ItemGroup>
 
 </Project>
