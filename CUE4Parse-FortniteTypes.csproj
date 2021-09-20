@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <RootNamespace>CUE4Parse_FortniteTypes</RootNamespace>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+</Project>
