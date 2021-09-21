@@ -1,4 +1,5 @@
 using CUE4Parse.FN.Enums.SlateCore;
+using CUE4Parse.UE4;
 using CUE4Parse.UE4.Assets.Exports;
 using CUE4Parse.UE4.Assets.Objects;
 using CUE4Parse.UE4.Assets.Utils;
@@ -8,7 +9,7 @@ using CUE4Parse.UE4.Objects.UObject;
 namespace CUE4Parse.FN.Structs.SlateCore
 {
     [StructFallback]
-    public class FSlateBrush
+    public class FSlateBrush : IUStruct
     {
         public FVector2D ImageSize;
         public FMargin Margin;

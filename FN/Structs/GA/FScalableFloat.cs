@@ -1,12 +1,13 @@
 using CUE4Parse.FN.Structs.DataRegistry;
 using CUE4Parse.FN.Structs.Engine;
+using CUE4Parse.UE4;
 using CUE4Parse.UE4.Assets.Objects;
 using CUE4Parse.UE4.Assets.Utils;
 
 namespace CUE4Parse.FN.Structs.GA
 {
     [StructFallback]
-    public class FScalableFloat
+    public class FScalableFloat : IUStruct
     {
         public float Value;
         public FCurveTableRowHandle Curve;

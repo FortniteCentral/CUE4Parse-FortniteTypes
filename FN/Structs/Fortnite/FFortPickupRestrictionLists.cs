@@ -1,14 +1,15 @@
+using CUE4Parse.UE4;
 using CUE4Parse.UE4.Assets.Objects;
 using CUE4Parse.UE4.Assets.Utils;
 
 namespace CUE4Parse.FN.Structs.Fortnite
 {
     [StructFallback]
-    public class FFortPickupRestrictionLists
+    public class FFortPickupRestrictionLists : IUStruct
     {
         public FFortPickupTagTestContainer WhiteList;
         public FFortPickupTagTestContainer Blacklist;
-        
+
         public FFortPickupRestrictionLists(FStructFallback fallback)
         {
             WhiteList = fallback.GetOrDefault<FFortPickupTagTestContainer>(nameof(WhiteList));

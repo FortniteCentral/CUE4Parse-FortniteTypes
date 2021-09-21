@@ -1,11 +1,12 @@
 using CUE4Parse.FN.Enums.Engine;
+using CUE4Parse.UE4;
 using CUE4Parse.UE4.Assets.Objects;
 using CUE4Parse.UE4.Assets.Utils;
 
 namespace CUE4Parse.FN.Structs.Fortnite
 {
     [StructFallback]
-    public class FAttachToComponentParams
+    public class FAttachToComponentParams : IUStruct
     {
         public EAttachmentRule LocationRule;
         public EAttachmentRule RotationRule;

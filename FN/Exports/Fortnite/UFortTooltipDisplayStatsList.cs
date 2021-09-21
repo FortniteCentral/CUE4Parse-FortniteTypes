@@ -7,7 +7,7 @@ namespace CUE4Parse.FN.Exports.Fortnite
     public class UFortTooltipDisplayStatsList : UObject
     {
         public FFortTooltipDisplayStatsCategory[]? TooltipCategories;
-        
+
         public override void Deserialize(FAssetArchive Ar, long validPos)
         {
             base.Deserialize(Ar, validPos);
