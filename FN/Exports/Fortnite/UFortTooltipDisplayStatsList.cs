@@ -2,7 +2,7 @@ using CUE4Parse.FN.Structs.Fortnite;
 using CUE4Parse.UE4.Assets.Exports;
 using CUE4Parse.UE4.Assets.Readers;
 
-namespace CUE4Parse.FN.Exports
+namespace CUE4Parse.FN.Exports.Fortnite
 {
     public class UFortTooltipDisplayStatsList : UObject
     {

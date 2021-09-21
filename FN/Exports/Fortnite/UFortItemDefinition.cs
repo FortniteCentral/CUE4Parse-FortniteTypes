@@ -1,4 +1,4 @@
-using CUE4Parse.FN.Enums;
+using CUE4Parse.FN.Enums.Fortnite;
 using CUE4Parse.FN.Structs.Engine;
 using CUE4Parse.FN.Structs.GA;
 using CUE4Parse.UE4.Assets.Exports;
@@ -12,7 +12,7 @@ using CUE4Parse.UE4.Objects.GameplayTags;
 using CUE4Parse.UE4.Objects.UObject;
 using CUE4Parse_Fortnite.Enums;
 
-namespace CUE4Parse.FN.Exports
+namespace CUE4Parse.FN.Exports.Fortnite
 {
     public class UFortItemDefinition : UObject
     {

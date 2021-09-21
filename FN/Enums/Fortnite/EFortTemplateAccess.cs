@@ -1,4 +1,4 @@
-namespace CUE4Parse.FN.Enums
+namespace CUE4Parse.FN.Enums.Fortnite
 {
     public enum EFortTemplateAccess : byte
     {
