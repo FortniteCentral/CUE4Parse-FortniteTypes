@@ -1,10 +1,9 @@
 using CUE4Parse.FN.Enums.Fortnite;
-using CUE4Parse.FN.Exports.Fortnite;
 using CUE4Parse.FN.Structs.SlateCore;
 using CUE4Parse.UE4.Assets.Readers;
 using CUE4Parse.UE4.Objects.UObject;
 
-namespace CUE4Parse.FN.Exports
+namespace CUE4Parse.FN.Exports.Fortnite
 {
     public class UFortTokenType : UFortAccountItemDefinition
     {

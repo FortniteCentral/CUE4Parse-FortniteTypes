@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using CUE4Parse.FN.Enums.Fortnite;
-using CUE4Parse.FN.Exports.Fortnite.VariantPreviewGenerators;
+using CUE4Parse.FN.Exports.Fortnite.NoProperties;
 using CUE4Parse.FN.Structs.Fortnite;
 using CUE4Parse.FN.Structs.GT;
 using CUE4Parse.UE4.Assets.Objects;
@@ -31,10 +31,10 @@ namespace CUE4Parse.FN.Exports.Fortnite
         public FGameplayTagContainer DisallowedCosmeticTags;
         public FGameplayTagContainer MetaTags;
         public FGameplayTag[]? VariantChannelsToNeverSendToMCP;
-        public Dictionary<FCosmeticVariantInfo, FSoftObjectPath>? ReactivePreviewDrivers; // FSoftObjectPath = UClass
+        public Dictionary<FCosmeticVariantInfo, FSoftObjectPath> ReactivePreviewDrivers = new(); // FSoftObjectPath = UClass
         public FAthenaCosmeticMaterialOverride[]? MaterialOverrides;
         public FGameplayTagContainer ObservedPlayerStats;
-        public UFortMontageItemDefinitionBase[]? BuiltInEmotes;
+        public List<UFortMontageItemDefinitionBase> BuiltInEmotes = new();
         public UFortCosmeticVariant[]? ItemVariants;
         public FGameplayTag? VariantChannelToUseForThumbnails;
         public FFortCosmeticVariantPreview[]? ItemVariantPreviews;
@@ -78,8 +78,7 @@ namespace CUE4Parse.FN.Exports.Fortnite
             MetaTags = GetOrDefault<FGameplayTagContainer>(nameof(MetaTags));
             VariantChannelsToNeverSendToMCP = GetOrDefault<FGameplayTag[]>(nameof(VariantChannelsToNeverSendToMCP));
 
-            var previewDrivers = GetOrDefault<UScriptMap>(nameof(ReactivePreviewDrivers));
-            ReactivePreviewDrivers = new Dictionary<FCosmeticVariantInfo, FSoftObjectPath>();
+            var previewDrivers = GetOrDefault(nameof(ReactivePreviewDrivers), new UScriptMap());
             foreach (var (key, value) in previewDrivers.Properties)
             {
                 if (key?.GenericValue is UScriptStruct { StructType: FStructFallback variantInfo } && value?.GenericValue is FSoftObjectPath clazz)
@@ -90,8 +89,14 @@ namespace CUE4Parse.FN.Exports.Fortnite
 
             MaterialOverrides = GetOrDefault<FAthenaCosmeticMaterialOverride[]>(nameof(MaterialOverrides));
             ObservedPlayerStats = GetOrDefault<FGameplayTagContainer>(nameof(ObservedPlayerStats));
-            BuiltInEmotes = GetOrDefault<UFortMontageItemDefinitionBase[]>(nameof(BuiltInEmotes));
-            ItemVariants = GetOrDefault<UFortCosmeticVariant[]>(nameof(ItemVariants));
+
+            // Prevents this object from becoming the montage object
+            foreach (var montage in GetOrDefault<UFortMontageItemDefinitionBase[]>(nameof(BuiltInEmotes)))
+            {
+                BuiltInEmotes.Add(montage);
+            }
+
+            // ItemVariants = GetOrDefault<UFortCosmeticVariant[]>(nameof(ItemVariants)); // TODO: Causes InvalidOperationException
             VariantChannelToUseForThumbnails = GetOrDefault<FGameplayTag>(nameof(VariantChannelToUseForThumbnails));
             ItemVariantPreviews = GetOrDefault<FFortCosmeticVariantPreview[]>(nameof(ItemVariantPreviews));
             ItemVariantPreviewGenerator = GetOrDefault<UFortVariantPreviewGenerator>(nameof(ItemVariantPreviewGenerator));
