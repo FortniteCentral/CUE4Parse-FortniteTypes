@@ -2,8 +2,8 @@ namespace CUE4Parse.FN.Enums.SlateCore
 {
     public enum ESlateBrushImageType : byte
     {
-        NoImage,
-        FullColor,
-        Linear
+        NoImage = 0,
+        FullColor = 1,
+        Linear = 2
     }
 }

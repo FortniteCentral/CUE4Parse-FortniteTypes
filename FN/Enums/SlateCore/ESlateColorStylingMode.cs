@@ -2,9 +2,9 @@ namespace CUE4Parse.FN.Enums.SlateCore
 {
     public enum ESlateColorStylingMode : byte
     {
-        UseColor_Specified,
-        UseColor_Specified_Link,
-        UseColor_Foreground,
-        UseColor_Foreground_Subdued
+        UseColor_Specified = 0,
+        UseColor_Specified_Link = 1,
+        UseColor_Foreground = 2,
+        UseColor_Foreground_Subdued = 3
     }
 }
