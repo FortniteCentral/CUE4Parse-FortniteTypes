@@ -23,7 +23,7 @@ namespace CUE4Parse.FN.Exports.Fortnite
         public FSoftObjectPath PunchCardIcon; // UObject
         public FLinearColor PrimaryColor;
         public FLinearColor SecondaryColor;
-        
+
         public override void Deserialize(FAssetArchive Ar, long validPos)
         {
             base.Deserialize(Ar, validPos);
