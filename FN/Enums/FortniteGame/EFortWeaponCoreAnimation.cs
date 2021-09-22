@@ -1,0 +1,40 @@
+namespace CUE4Parse.FN.Enums.FortniteGame
+{
+    public enum EFortWeaponCoreAnimation : byte
+    {
+        Melee = 0,
+        Pistol = 1,
+        Shotgun = 2,
+        PaperBlueprint = 3,
+        Rifle = 4,
+        MeleeOneHand = 5,
+        MachinePistol = 6,
+        RocketLauncher = 7,
+        GrenadeLauncher = 8,
+        GoingCommando = 9,
+        AssaultRifle = 10,
+        TacticalShotgun = 11,
+        SniperRifle = 12,
+        TrapPlacement = 13,
+        ShoulderLauncher = 14,
+        AbilityDecoTool = 15,
+        Crossbow = 16,
+        C4 = 17,
+        RemoteControl = 18,
+        DualWield = 19,
+        AR_BullPup = 20,
+        AR_ForwardGrip = 21,
+        MedPackPaddles = 22,
+        SMG_P90 = 23,
+        AR_DrumGun = 24,
+        Consumable_Small = 25,
+        Consumable_Large = 26,
+        Balloon = 27,
+        MountedTurret = 28,
+        CreativeTool = 29,
+        ExplosiveBow = 30,
+        AshtonIndigo = 31,
+        AshtonChicago = 32,
+        MeleeDualWield = 33
+    }
+}
