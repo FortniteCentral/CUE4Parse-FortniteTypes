@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using CUE4Parse.FN.Enums.Fortnite;
 using CUE4Parse.FN.Exports.Fortnite.NoProperties;
@@ -91,7 +92,7 @@ namespace CUE4Parse.FN.Exports.Fortnite
             ObservedPlayerStats = GetOrDefault<FGameplayTagContainer>(nameof(ObservedPlayerStats));
 
             // Prevents this object from becoming the montage object
-            foreach (var montage in GetOrDefault<UFortMontageItemDefinitionBase[]>(nameof(BuiltInEmotes)))
+            foreach (var montage in GetOrDefault(nameof(BuiltInEmotes), Array.Empty<UFortMontageItemDefinitionBase>()))
             {
                 BuiltInEmotes.Add(montage);
             }
