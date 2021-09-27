@@ -5,7 +5,7 @@ using CUE4Parse.UE4.Assets.Utils;
 namespace CUE4Parse.FN.Structs.FortniteGame
 {
     [StructFallback]
-    public class FFortPickupRestrictionLists : IUStruct
+    public class FFortPickupRestrictionLists 
     {
         public FFortPickupTagTestContainer WhiteList;
         public FFortPickupTagTestContainer Blacklist;

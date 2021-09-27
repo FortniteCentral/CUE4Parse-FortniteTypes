@@ -6,7 +6,7 @@ using CUE4Parse.UE4.Objects.UObject;
 namespace CUE4Parse.FN.Structs.GT
 {
     [StructFallback]
-    public class FGameplayTag : IUStruct
+    public class FGameplayTag 
     {
         public FName TagName;
 

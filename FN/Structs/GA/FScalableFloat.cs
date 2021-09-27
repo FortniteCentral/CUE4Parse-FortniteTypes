@@ -7,7 +7,7 @@ using CUE4Parse.UE4.Assets.Utils;
 namespace CUE4Parse.FN.Structs.GA
 {
     [StructFallback]
-    public class FScalableFloat : IUStruct
+    public class FScalableFloat 
     {
         public float Value;
         public FCurveTableRowHandle Curve;

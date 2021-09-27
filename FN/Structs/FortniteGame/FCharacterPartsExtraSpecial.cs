@@ -7,7 +7,7 @@ using CUE4Parse.UE4.Objects.GameplayTags;
 namespace CUE4Parse.FN.Structs.FortniteGame
 {
     [StructFallback]
-    public class FCharacterPartsExtraSpecial : IUStruct
+    public class FCharacterPartsExtraSpecial 
     {
         public UCustomCharacterPart[] CharacterPartsForExtraSpecial;
         public FGameplayTagContainer SkinMetaTagsForExtraSpecial;

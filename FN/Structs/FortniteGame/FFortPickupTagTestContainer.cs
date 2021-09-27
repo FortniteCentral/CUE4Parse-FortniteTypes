@@ -7,7 +7,7 @@ using CUE4Parse.UE4.Objects.GameplayTags;
 namespace CUE4Parse.FN.Structs.FortniteGame
 {
     [StructFallback]
-    public class FFortPickupTagTestContainer : IUStruct
+    public class FFortPickupTagTestContainer 
     {
         public FGameplayTagContainer Tags;
         public FText FailReason;

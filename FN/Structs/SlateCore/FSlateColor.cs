@@ -7,7 +7,7 @@ using CUE4Parse.UE4.Objects.Core.Math;
 namespace CUE4Parse.FN.Structs.SlateCore
 {
     [StructFallback]
-    public class FSlateColor : IUStruct
+    public class FSlateColor 
     {
         public FLinearColor SpecifiedColor;
         public ESlateColorStylingMode ColorUseRule;

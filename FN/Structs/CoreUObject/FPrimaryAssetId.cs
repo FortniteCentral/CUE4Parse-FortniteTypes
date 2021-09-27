@@ -6,7 +6,7 @@ using CUE4Parse.UE4.Objects.UObject;
 namespace CUE4Parse.FN.Structs.CoreUObject
 {
     [StructFallback]
-    public class FPrimaryAssetId : IUStruct
+    public class FPrimaryAssetId 
     {
         public FPrimaryAssetType PrimaryAssetType;
         public FName PrimaryAssetName;
@@ -19,7 +19,7 @@ namespace CUE4Parse.FN.Structs.CoreUObject
     }
 
     [StructFallback]
-    public class FPrimaryAssetType : IUStruct
+    public class FPrimaryAssetType 
     {
         public FName Name;
 

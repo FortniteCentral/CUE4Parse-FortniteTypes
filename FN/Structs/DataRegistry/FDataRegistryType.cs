@@ -6,7 +6,7 @@ using CUE4Parse.UE4.Objects.UObject;
 namespace CUE4Parse.FN.Structs.DataRegistry
 {
     [StructFallback]
-    public class FDataRegistryType : IUStruct
+    public class FDataRegistryType 
     {
         public FName Name;
 

@@ -6,7 +6,7 @@ using CUE4Parse.UE4.Objects.UObject;
 namespace CUE4Parse.FN.Structs.FortniteGame
 {
     [StructFallback]
-    public class FFortCreativeTagsHelper : IUStruct
+    public class FFortCreativeTagsHelper 
     {
         public FName[] CreativeTags;
 

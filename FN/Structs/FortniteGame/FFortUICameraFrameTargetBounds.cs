@@ -6,7 +6,7 @@ using CUE4Parse.UE4.Objects.Core.Math;
 namespace CUE4Parse.FN.Structs.FortniteGame
 {
     [StructFallback]
-    public class FFortUICameraFrameTargetBounds : IUStruct
+    public class FFortUICameraFrameTargetBounds 
     {
         public FVector Origin;
         public float CylinderHalfHeight;

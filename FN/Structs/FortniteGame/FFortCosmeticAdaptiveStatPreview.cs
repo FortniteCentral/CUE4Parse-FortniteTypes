@@ -6,7 +6,7 @@ using CUE4Parse.UE4.Objects.Core.i18N;
 namespace CUE4Parse.FN.Structs.FortniteGame
 {
     [StructFallback]
-    public class FFortCosmeticAdaptiveStatPreview : IUStruct
+    public class FFortCosmeticAdaptiveStatPreview 
     {
         public FText UnlockCondition;
         public FFortCosmeticAdaptiveStatPair[] StatValues;

@@ -6,7 +6,7 @@ using CUE4Parse.UE4.Objects.UObject;
 namespace CUE4Parse.FN.Structs.GA
 {
     [StructFallback]
-    public class FGameplayAttribute : IUStruct
+    public class FGameplayAttribute 
     {
         public string AttributeName;
         public FFieldPath Attribute;

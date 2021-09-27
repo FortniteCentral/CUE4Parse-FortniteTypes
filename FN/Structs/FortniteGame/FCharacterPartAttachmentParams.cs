@@ -7,7 +7,7 @@ using CUE4Parse.UE4.Objects.UObject;
 namespace CUE4Parse.FN.Structs.FortniteGame
 {
     [StructFallback]
-    public class FCharacterPartAttachmentParams : IUStruct
+    public class FCharacterPartAttachmentParams 
     {
         public FName SocketName;
         public ECharacterPartAttachmentTargetType AttachmentTarget;

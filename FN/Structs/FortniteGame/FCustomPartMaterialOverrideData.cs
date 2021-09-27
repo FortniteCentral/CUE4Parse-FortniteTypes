@@ -6,7 +6,7 @@ using CUE4Parse.UE4.Objects.UObject;
 namespace CUE4Parse.FN.Structs.FortniteGame
 {
     [StructFallback]
-    public class FCustomPartMaterialOverrideData : IUStruct
+    public class FCustomPartMaterialOverrideData 
     {
         public int MaterialOverrideIndex;
         public FSoftObjectPath OverrideMaterial; // UMaterialInterface

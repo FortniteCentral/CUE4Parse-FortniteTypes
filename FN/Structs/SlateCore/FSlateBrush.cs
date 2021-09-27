@@ -9,7 +9,7 @@ using CUE4Parse.UE4.Objects.UObject;
 namespace CUE4Parse.FN.Structs.SlateCore
 {
     [StructFallback]
-    public class FSlateBrush : IUStruct
+    public class FSlateBrush 
     {
         public FVector2D ImageSize;
         public FMargin Margin;

@@ -8,7 +8,7 @@ using CUE4Parse.UE4.Objects.GameplayTags;
 namespace CUE4Parse.FN.Structs.FortniteGame
 {
     [StructFallback]
-    public class FFortTooltipDisplayStatInfo : IUStruct
+    public class FFortTooltipDisplayStatInfo 
     {
         public FGameplayTag Token;
         public FGameplayAttribute Attribute;

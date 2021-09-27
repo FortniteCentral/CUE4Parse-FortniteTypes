@@ -7,7 +7,7 @@ using CUE4Parse.UE4.Assets.Utils;
 namespace CUE4Parse.FN.Structs.FortniteGame
 {
     [StructFallback]
-    public class FMontageVisibilityData : IUStruct
+    public class FMontageVisibilityData 
     {
         public EMontageVisibilityRule Rule;
         public UFortItemDefinition Item;

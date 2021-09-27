@@ -8,7 +8,7 @@ using CUE4Parse.UE4.Objects.UObject;
 namespace CUE4Parse.FN.Structs.FortniteGame
 {
     [StructFallback]
-    public class FVariantSwapMontageData : IUStruct
+    public class FVariantSwapMontageData 
     {
         public FName MontageSectionName;
         public EMontageSelectionPredicateType EvaluationMode;

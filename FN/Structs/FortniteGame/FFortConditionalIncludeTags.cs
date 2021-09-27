@@ -6,7 +6,7 @@ using CUE4Parse.UE4.Objects.GameplayTags;
 namespace CUE4Parse.FN.Structs.FortniteGame
 {
     [StructFallback]
-    public class FFortConditionalIncludeTags : IUStruct
+    public class FFortConditionalIncludeTags 
     {
         public FGameplayTagContainer ConditionTags;
         public FGameplayTagContainer IncludeTags;

@@ -7,7 +7,7 @@ using CUE4Parse.UE4.Objects.UObject;
 namespace CUE4Parse.FN.Structs.FortniteGame
 {
     [StructFallback]
-    public class FVectorParticleParameter : IUStruct
+    public class FVectorParticleParameter 
     {
         public FVector Value;
         public FName ParameterName;

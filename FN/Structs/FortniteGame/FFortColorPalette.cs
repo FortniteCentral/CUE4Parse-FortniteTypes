@@ -6,7 +6,7 @@ using CUE4Parse.UE4.Objects.Core.Math;
 namespace CUE4Parse.FN.Structs.FortniteGame
 {
     [StructFallback]
-    public class FFortColorPalette : IUStruct
+    public class FFortColorPalette 
     {
         public FLinearColor Color1;
         public FLinearColor Color2;

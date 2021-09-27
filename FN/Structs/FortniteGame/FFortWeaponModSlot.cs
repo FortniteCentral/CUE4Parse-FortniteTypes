@@ -6,7 +6,7 @@ using CUE4Parse.UE4.Assets.Utils;
 namespace CUE4Parse.FN.Structs.FortniteGame
 {
     [StructFallback]
-    public class FFortWeaponModSlot : IUStruct
+    public class FFortWeaponModSlot 
     {
         public UFortWeaponModItemDefinition WeaponMod;
         public bool bIsDynamic;

@@ -6,7 +6,7 @@ using CUE4Parse.UE4.Objects.UObject;
 namespace CUE4Parse.FN.Structs.FortniteGame
 {
     [StructFallback]
-    public class FSectionNameAndWeight : IUStruct
+    public class FSectionNameAndWeight 
     {
         public FName SectionName;
         public float SectionWeight;

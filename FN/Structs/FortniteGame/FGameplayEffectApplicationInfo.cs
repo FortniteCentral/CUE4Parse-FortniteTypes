@@ -6,7 +6,7 @@ using CUE4Parse.UE4.Objects.UObject;
 namespace CUE4Parse.FN.Structs.FortniteGame
 {
     [StructFallback]
-    public class FGameplayEffectApplicationInfo : IUStruct
+    public class FGameplayEffectApplicationInfo 
     {
         public FSoftObjectPath GameplayEffect; // UClass
         public float Level;

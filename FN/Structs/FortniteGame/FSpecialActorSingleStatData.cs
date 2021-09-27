@@ -6,7 +6,7 @@ using CUE4Parse.UE4.Assets.Utils;
 namespace CUE4Parse.FN.Structs.FortniteGame
 {
     [StructFallback]
-    public class FSpecialActorSingleStatData : IUStruct
+    public class FSpecialActorSingleStatData 
     {
         public ESpecialActorStatType StatType;
         public float Value;

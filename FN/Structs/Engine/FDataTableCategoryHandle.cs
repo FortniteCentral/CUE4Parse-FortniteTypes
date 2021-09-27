@@ -7,7 +7,7 @@ using CUE4Parse.UE4.Objects.UObject;
 namespace CUE4Parse.FN.Structs.Engine
 {
     [StructFallback]
-    public class FDataTableCategoryHandle : IUStruct
+    public class FDataTableCategoryHandle 
     {
         public UDataTable DataTable;
         public FName ColumnName;

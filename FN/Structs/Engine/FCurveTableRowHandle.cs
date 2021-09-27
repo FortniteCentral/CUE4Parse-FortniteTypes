@@ -7,7 +7,7 @@ using CUE4Parse.UE4.Objects.UObject;
 namespace CUE4Parse.FN.Structs.Engine
 {
     [StructFallback]
-    public class FCurveTableRowHandle : IUStruct
+    public class FCurveTableRowHandle 
     {
         public UCurveTable CurveTable;
         public FName RowName;

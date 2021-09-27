@@ -6,7 +6,7 @@ using CUE4Parse.UE4.Assets.Utils;
 namespace CUE4Parse.FN.Structs.FortniteGame
 {
     [StructFallback]
-    public class FCosmeticVariantInfo : IUStruct
+    public class FCosmeticVariantInfo 
     {
         public FGameplayTag? VariantChannelTag;
         public FGameplayTag? ActiveVariantTag;

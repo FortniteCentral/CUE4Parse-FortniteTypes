@@ -6,7 +6,7 @@ using CUE4Parse.UE4.Objects.Core.i18N;
 namespace CUE4Parse.FN.Structs.FortniteGame
 {
     [StructFallback]
-    public class FFortTooltipDisplayStatsCategory : IUStruct
+    public class FFortTooltipDisplayStatsCategory 
     {
         public FText CategoryName;
         public FFortTooltipDisplayStatInfo[] TooltipStats;

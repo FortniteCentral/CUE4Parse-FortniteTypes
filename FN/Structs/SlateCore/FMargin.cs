@@ -5,7 +5,7 @@ using CUE4Parse.UE4.Assets.Utils;
 namespace CUE4Parse.FN.Structs.SlateCore
 {
     [StructFallback]
-    public class FMargin : IUStruct
+    public class FMargin 
     {
         public float Left;
         public float Top;

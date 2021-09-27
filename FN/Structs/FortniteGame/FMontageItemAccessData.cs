@@ -7,7 +7,7 @@ using CUE4Parse.UE4.Assets.Utils;
 namespace CUE4Parse.FN.Structs.FortniteGame
 {
     [StructFallback]
-    public class FMontageItemAccessData : IUStruct
+    public class FMontageItemAccessData 
     {
         public FGameplayTag AccessTag;
         public UFortItemAccessTokenType AccessToken;

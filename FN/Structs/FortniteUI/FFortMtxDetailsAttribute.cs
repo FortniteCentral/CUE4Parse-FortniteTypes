@@ -6,7 +6,7 @@ using CUE4Parse.UE4.Objects.Core.i18N;
 namespace CUE4Parse.FN.Structs.FortniteUI
 {
     [StructFallback]
-    public class FFortMtxDetailsAttribute : IUStruct
+    public class FFortMtxDetailsAttribute 
     {
         public FText Name;
         public FText Value;

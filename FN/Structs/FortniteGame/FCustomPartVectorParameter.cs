@@ -7,7 +7,7 @@ using CUE4Parse.UE4.Objects.UObject;
 namespace CUE4Parse.FN.Structs.FortniteGame
 {
     [StructFallback]
-    public class FCustomPartVectorParameter : IUStruct
+    public class FCustomPartVectorParameter 
     {
         public int MaterialIndexForVectorParameter;
         public FName VectorParameterNameForMaterial;

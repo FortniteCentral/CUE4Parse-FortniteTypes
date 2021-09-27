@@ -6,7 +6,7 @@ using CUE4Parse.UE4.Objects.Core.Math;
 namespace CUE4Parse.FN.Structs.FortniteUI
 {
     [StructFallback]
-    public class FFortMtxGradient : IUStruct
+    public class FFortMtxGradient 
     {
         public FLinearColor Start;
         public FLinearColor Stop;

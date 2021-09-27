@@ -6,7 +6,7 @@ using CUE4Parse.UE4.Assets.Utils;
 namespace CUE4Parse.FN.Structs.FortniteGame
 {
     [StructFallback]
-    public class FVariantSwapMontageActiveSwapsRequirement : IUStruct
+    public class FVariantSwapMontageActiveSwapsRequirement 
     {
         public FMcpVariantChannelInfo[] VariantSelections;
         public UFortItemDefinition Item;

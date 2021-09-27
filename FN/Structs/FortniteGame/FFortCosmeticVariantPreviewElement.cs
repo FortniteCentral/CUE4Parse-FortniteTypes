@@ -6,7 +6,7 @@ using CUE4Parse.UE4.Assets.Utils;
 namespace CUE4Parse.FN.Structs.FortniteGame
 {
     [StructFallback]
-    public class FFortCosmeticVariantPreviewElement : IUStruct
+    public class FFortCosmeticVariantPreviewElement 
     {
         public FMcpVariantChannelInfo[] VariantOptions;
         public UAthenaCosmeticItemDefinition Item;

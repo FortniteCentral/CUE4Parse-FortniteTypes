@@ -6,7 +6,7 @@ using CUE4Parse.UE4.Assets.Utils;
 namespace CUE4Parse.FN.Structs.FortniteGame
 {
     [StructFallback]
-    public class FFortMultiSizeBrush : IUStruct
+    public class FFortMultiSizeBrush 
     {
         public FSlateBrush Brush_XXS;
         public FSlateBrush Brush_XS;

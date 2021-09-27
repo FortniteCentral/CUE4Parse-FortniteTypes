@@ -6,7 +6,7 @@ using CUE4Parse.UE4.Objects.UObject;
 namespace CUE4Parse.FN.Structs.FortniteGame
 {
     [StructFallback]
-    public class FCustomPartTextureParameter : IUStruct
+    public class FCustomPartTextureParameter 
     {
         public int MaterialIndexForTextureParameter;
         public FName TextureParameterNameForMaterial;
