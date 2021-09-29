@@ -61,7 +61,7 @@ namespace CUE4Parse.FN.Exports.FortniteGame
             bAttachToSocket = GetOrDefault<bool>(nameof(bAttachToSocket));
             bIgnorePart = GetOrDefault<bool>(nameof(bIgnorePart));
             PartModifierBlueprint = GetOrDefault<FSoftObjectPath>(nameof(PartModifierBlueprint));
-            AdditionalData = GetOrDefault<UCustomCharacterPartData>(nameof(AdditionalData));
+            // AdditionalData = GetOrDefault<UCustomCharacterPartData>(nameof(AdditionalData)); // TODO: InvalidOperationException
             DefaultMontageLookupTable = GetOrDefault<FSoftObjectPath>(nameof(DefaultMontageLookupTable));
             OverrideMontageLookupTable = GetOrDefault<FSoftObjectPath>(nameof(OverrideMontageLookupTable));
             FrontendAnimMontageIdleOverride = GetOrDefault<FSoftObjectPath>(nameof(FrontendAnimMontageIdleOverride));
