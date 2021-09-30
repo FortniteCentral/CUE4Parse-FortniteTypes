@@ -43,7 +43,7 @@ namespace CUE4Parse.FN.Exports.FortniteGame
             AnimTrailsNiagaraOffhand = GetOrDefault<FSoftObjectPath>(nameof(AnimTrailsNiagaraOffhand));
             OffhandGenericImpactSound = GetOrDefault<FSoftObjectPath>(nameof(OffhandGenericImpactSound));
 
-            var offImpPhysSounds = GetOrDefault<UScriptMap>(nameof(OffhandImpactPhysicalSurfaceSoundsMap));
+            var offImpPhysSounds = GetOrDefault(nameof(OffhandImpactPhysicalSurfaceSoundsMap), new UScriptMap());
             foreach (var (key, value) in offImpPhysSounds.Properties)
             {
                 if (key is EnumProperty k && Enum.TryParse(k.Value.Text, true, out EPhysicalSurface surface) &&
@@ -53,7 +53,7 @@ namespace CUE4Parse.FN.Exports.FortniteGame
                 }
             }
 
-            var offImpPhysEffects = GetOrDefault<UScriptMap>(nameof(OffhandImpactPhysicalSurfaceEffects));
+            var offImpPhysEffects = GetOrDefault(nameof(OffhandImpactPhysicalSurfaceEffects), new UScriptMap());
             foreach (var (key, value) in offImpPhysEffects.Properties)
             {
                 if (key is EnumProperty k && Enum.TryParse(k.Value.Text, true, out EPhysicalSurface surface) &&
@@ -63,7 +63,7 @@ namespace CUE4Parse.FN.Exports.FortniteGame
                 }
             }
 
-            var offImpNiagaraPhysEffects = GetOrDefault<UScriptMap>(nameof(OffhandImpactNiagaraPhysicalSurfaceEffects));
+            var offImpNiagaraPhysEffects = GetOrDefault(nameof(OffhandImpactNiagaraPhysicalSurfaceEffects), new UScriptMap());
             foreach (var (key, value) in offImpNiagaraPhysEffects.Properties)
             {
                 if (key is EnumProperty k && Enum.TryParse(k.Value.Text, true, out EPhysicalSurface surface) &&
@@ -73,7 +73,7 @@ namespace CUE4Parse.FN.Exports.FortniteGame
                 }
             }
 
-            var offPrimaryFire = GetOrDefault<UScriptMap>(nameof(OffhandPrimaryFireSoundMap));
+            var offPrimaryFire = GetOrDefault(nameof(OffhandPrimaryFireSoundMap), new UScriptMap());
             foreach (var (key, value) in offPrimaryFire.Properties)
             {
                 if (key is EnumProperty k && Enum.TryParse(k.Value.Text, true, out EFortWeaponSoundState state) &&
