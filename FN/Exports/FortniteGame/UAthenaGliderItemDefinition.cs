@@ -69,7 +69,7 @@ namespace CUE4Parse.FN.Exports.FortniteGame
             CloseSound = GetOrDefault<FSoftObjectPath>(nameof(CloseSound));
             ThrustLoopSound = GetOrDefault<FSoftObjectPath>(nameof(ThrustLoopSound));
 
-            var soundParams = GetOrDefault<UScriptMap>(nameof(ThrustSoundParams));
+            var soundParams = GetOrDefault(nameof(ThrustSoundParams), new UScriptMap());
             foreach (var (key, value) in soundParams.Properties)
             {
                 if (key is EnumProperty k && Enum.TryParse(k.Value.Text, true, out ELayeredAudioTriggerDirection direction) &&

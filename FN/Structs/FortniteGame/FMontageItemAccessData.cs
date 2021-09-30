@@ -3,6 +3,8 @@ using CUE4Parse.FN.Structs.GT;
 using CUE4Parse.UE4;
 using CUE4Parse.UE4.Assets.Objects;
 using CUE4Parse.UE4.Assets.Utils;
+using CUE4Parse.UE4.IO.Objects;
+using CUE4Parse.UE4.Objects.UObject;
 
 namespace CUE4Parse.FN.Structs.FortniteGame
 {
@@ -10,12 +12,12 @@ namespace CUE4Parse.FN.Structs.FortniteGame
     public class FMontageItemAccessData 
     {
         public FGameplayTag AccessTag;
-        public UFortItemAccessTokenType AccessToken;
+        public FPackageIndex AccessToken; // UFortItemAccessTokenType
 
         public FMontageItemAccessData(FStructFallback fallback)
         {
             AccessTag = fallback.GetOrDefault<FGameplayTag>(nameof(AccessTag));
-            AccessToken = fallback.GetOrDefault<UFortItemAccessTokenType>(nameof(AccessToken));
+            AccessToken = fallback.GetOrDefault<FPackageIndex>(nameof(AccessToken));
         }
     }
 }

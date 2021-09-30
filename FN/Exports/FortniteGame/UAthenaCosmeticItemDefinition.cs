@@ -100,7 +100,7 @@ namespace CUE4Parse.FN.Exports.FortniteGame
             // ItemVariants = GetOrDefault<UFortCosmeticVariant[]>(nameof(ItemVariants)); // TODO: Causes InvalidOperationException
             VariantChannelToUseForThumbnails = GetOrDefault<FGameplayTag>(nameof(VariantChannelToUseForThumbnails));
             ItemVariantPreviews = GetOrDefault<FFortCosmeticVariantPreview[]>(nameof(ItemVariantPreviews));
-            ItemVariantPreviewGenerator = GetOrDefault<UFortVariantPreviewGenerator>(nameof(ItemVariantPreviewGenerator));
+            // ItemVariantPreviewGenerator = GetOrDefault<UFortVariantPreviewGenerator>(nameof(ItemVariantPreviewGenerator)); // TODO: Causes InvalidOperationException
             DirectAquisitionStyleDisclaimerOverride = GetOrDefault<FText>(nameof(DirectAquisitionStyleDisclaimerOverride));
             ItemObservedStatPreviews = GetOrDefault<FFortCosmeticAdaptiveStatPreview[]>(nameof(ItemObservedStatPreviews));
             UnlockRequirements = GetOrDefault<FText>(nameof(UnlockRequirements));

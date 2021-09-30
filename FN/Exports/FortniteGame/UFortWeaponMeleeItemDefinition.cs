@@ -58,7 +58,7 @@ namespace CUE4Parse.FN.Exports.FortniteGame
             bUseAnimTrails = GetOrDefault<bool>(nameof(bUseAnimTrails));
             bAttachAnimTrailsToWeapon = GetOrDefault<bool>(nameof(bAttachAnimTrailsToWeapon));
 
-            var impPhysicalFx = GetOrDefault<UScriptMap>(nameof(ImpactPhysicalSurfaceEffectsMap));
+            var impPhysicalFx = GetOrDefault(nameof(ImpactPhysicalSurfaceEffectsMap), new UScriptMap());
             foreach (var (key, value) in impPhysicalFx.Properties)
             {
                 if (key is EnumProperty k && Enum.TryParse(k.Value.Text, true, out EPhysicalSurface surface) &&
@@ -70,7 +70,7 @@ namespace CUE4Parse.FN.Exports.FortniteGame
 
             ImpactNiagaraPhysicalSurfaceEffects = GetOrDefault<FSoftObjectPath[]>(nameof(ImpactNiagaraPhysicalSurfaceEffects));
 
-            var impNiagaraPhysFx = GetOrDefault<UScriptMap>(nameof(ImpactNiagaraPhysicalSurfaceEffectsMap));
+            var impNiagaraPhysFx = GetOrDefault(nameof(ImpactNiagaraPhysicalSurfaceEffectsMap), new UScriptMap());
             foreach (var (key, value) in impNiagaraPhysFx.Properties)
             {
                 if (key is EnumProperty k && Enum.TryParse(k.Value.Text, true, out EPhysicalSurface surface) &&
@@ -85,7 +85,7 @@ namespace CUE4Parse.FN.Exports.FortniteGame
             AnimClass = GetOrDefault<FSoftObjectPath>(nameof(AnimClass));
             SingleAnimationToPlay = GetOrDefault<FSoftObjectPath>(nameof(SingleAnimationToPlay));
 
-            var impPhysSound = GetOrDefault<UScriptMap>(nameof(ImpactPhysicalSurfaceSoundsMap));
+            var impPhysSound = GetOrDefault(nameof(ImpactPhysicalSurfaceSoundsMap), new UScriptMap());
             foreach (var (key, value) in impPhysSound.Properties)
             {
                 if (key is EnumProperty k && Enum.TryParse(k.Value.Text, true, out EPhysicalSurface surface) &&
@@ -95,7 +95,7 @@ namespace CUE4Parse.FN.Exports.FortniteGame
                 }
             }
 
-            var reloadSounds = GetOrDefault<UScriptMap>(nameof(ReloadSoundsMap));
+            var reloadSounds = GetOrDefault(nameof(ReloadSoundsMap), new UScriptMap());
             foreach (var (key, value) in reloadSounds.Properties)
             {
                 if (key is EnumProperty k && Enum.TryParse(k.Value.Text, true, out EFortReloadFXState state) &&
@@ -105,7 +105,7 @@ namespace CUE4Parse.FN.Exports.FortniteGame
                 }
             }
 
-            var fireSounds = GetOrDefault<UScriptMap>(nameof(PrimaryFireSoundMap));
+            var fireSounds = GetOrDefault(nameof(PrimaryFireSoundMap), new UScriptMap());
             foreach (var (key, value) in fireSounds.Properties)
             {
                 if (key is EnumProperty k && Enum.TryParse(k.Value.Text, true, out EFortWeaponSoundState state) &&
