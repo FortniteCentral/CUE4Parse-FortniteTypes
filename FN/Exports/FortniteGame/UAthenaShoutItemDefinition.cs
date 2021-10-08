@@ -17,7 +17,7 @@ namespace CUE4Parse.FN.Exports.FortniteGame
 
             ShoutSound = GetOrDefault<FSoftObjectPath>(nameof(ShoutSound));
 
-            var audioComp = GetOrDefault<UScriptSet>(nameof(TemporarilyHeldAudioComponents));
+            var audioComp = GetOrDefault(nameof(TemporarilyHeldAudioComponents), new UScriptSet());
             foreach (var prop in audioComp.Properties)
             {
                 if (prop.GenericValue is FPackageIndex i && i.TryLoad<UObject>(out var component))
