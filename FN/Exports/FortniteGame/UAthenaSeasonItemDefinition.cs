@@ -10,6 +10,7 @@ namespace CUE4Parse.FN.Exports.FortniteGame
         public bool bUseSeasonCurveForBattlePassRewards;
         public UDataTable? SeasonXpOnlyExtendedCurve;
         public UFortMedalsPunchCardItemDefinition? DailyPunchCard;
+        public UFortRepeatableDailiesCardItemDefinition? RepeatableDailiesCard;
 
         public override void Deserialize(FAssetArchive Ar, long validPos)
         {
@@ -20,6 +21,7 @@ namespace CUE4Parse.FN.Exports.FortniteGame
             bUseSeasonCurveForBattlePassRewards = GetOrDefault<bool>(nameof(bUseSeasonCurveForBattlePassRewards));
             SeasonXpOnlyExtendedCurve = GetOrDefault<UDataTable>(nameof(SeasonXpOnlyExtendedCurve));
             DailyPunchCard = GetOrDefault<UFortMedalsPunchCardItemDefinition>(nameof(DailyPunchCard));
+            RepeatableDailiesCard = GetOrDefault<UFortRepeatableDailiesCardItemDefinition>(nameof(RepeatableDailiesCard));
         }
     }
 }
