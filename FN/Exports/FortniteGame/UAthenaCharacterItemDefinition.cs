@@ -12,6 +12,7 @@ namespace CUE4Parse.FN.Exports.FortniteGame
     public class UAthenaCharacterItemDefinition : UAthenaCosmeticItemDefinition
     {
         public Dictionary<FName, UClass> RequestedDataStores = new();
+        public FSoftObjectPath[]? BaseCharacterParts;
         public UFortHeroType? HeroDefinition;
         public UAthenaBackpackItemDefinition? DefaultBackpack;
         public UAthenaCosmeticItemDefinition[]? RequiredCosmeticItems;
@@ -33,6 +34,7 @@ namespace CUE4Parse.FN.Exports.FortniteGame
                 }
             }
 
+            BaseCharacterParts = GetOrDefault<FSoftObjectPath[]>(nameof(BaseCharacterParts));
             HeroDefinition = GetOrDefault<UFortHeroType>(nameof(HeroDefinition));
             DefaultBackpack = GetOrDefault<UAthenaBackpackItemDefinition>(nameof(DefaultBackpack));
             RequiredCosmeticItems = GetOrDefault<UAthenaCosmeticItemDefinition[]>(nameof(RequiredCosmeticItems));
