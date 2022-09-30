@@ -1,4 +1,4 @@
-# CUE4Parse-FortniteTypes extensions
+# CUE4Parse FortniteTypes extensions
 
 I have created this mainly for myself, but it may be useful to others. This projects adds Fortnite-specific Objects,
 Enums, and Structs to CUE4Parse for easier access to Fortnite types!
