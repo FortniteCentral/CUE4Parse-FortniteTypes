@@ -11,7 +11,7 @@ ObjectTypeRegistry.RegisterEngine(typeof(UFortItemDefinition).Assembly);
 
 # Documentation
 
-Coming soon!
+Coming soon to a theater near you!
 
 # Links
 
