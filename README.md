@@ -10,6 +10,5 @@ ObjectTypeRegistry.RegisterEngine(typeof(UFortItemDefinition).Assembly);
 ```
 
 # Documentation & Links
-
 Coming soon!
-Coming Soon!
+
