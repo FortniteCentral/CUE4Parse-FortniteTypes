@@ -9,6 +9,6 @@ To register all classes used in this project, in your own project, use the line 
 ObjectTypeRegistry.RegisterEngine(typeof(UFortItemDefinition).Assembly);
 ```
 
-# Documentation & Links
+# Documentation/Links
 Coming soon!
 
